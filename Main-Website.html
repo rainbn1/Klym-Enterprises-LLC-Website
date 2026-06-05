@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Klym Enterprises LLC</title>
+<style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Inter, Arial, sans-serif;
+}
+
+body {
+background: #070A12;
+color: white;
+line-height: 1.6;
+}
+
+header {
+min-height: 100vh;
+padding: 30px 8%;
+background:
+radial-gradient(circle at top right, rgba(117, 76, 255, 0.35), transparent 35%),
+radial-gradient(circle at bottom left, rgba(0, 195, 255, 0.25), transparent 35%),
+#070A12;
+}
+
+nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 120px;
+}
+
+.logo {
+font-size: 1.4rem;
+font-weight: 800;
+letter-spacing: 1px;
+}
+
+.nav-links a {
+color: #cfd6ff;
+text-decoration: none;
+margin-left: 28px;
+font-size: 0.95rem;
+}
+
+.hero {
+max-width: 850px;
+}
+
+.badge {
+display: inline-block;
+padding: 8px 14px;
+border: 1px solid rgba(255,255,255,0.2);
+border-radius: 999px;
+color: #b8c2ff;
+margin-bottom: 24px;
+background: rgba(255,255,255,0.05);
+}
+
+h1 {
+font-size: clamp(3rem, 7vw, 6.5rem);
+line-height: 1;
+margin-bottom: 26px;
+letter-spacing: -3px;
+}
+
+.gradient-text {
+background: linear-gradient(90deg, #ffffff, #8f9bff, #46d9ff);
+-webkit-background-clip: text;
+color: transparent;
+}
+
+.hero p {
+font-size: 1.25rem;
+color: #c4cae8;
+max-width: 650px;
+margin-bottom: 36px;
+}
+
+.buttons a {
+display: inline-block;
+padding: 14px 24px;
+border-radius: 14px;
+text-decoration: none;
+margin-right: 14px;
+font-weight: 700;
+}
+
+.primary {
+background: white;
+color: #070A12;
+}
+
+.secondary {
+border: 1px solid rgba(255,255,255,0.25);
+color: white;
+}
+
+section {
+padding: 90px 8%;
+}
+
+.section-title {
+font-size: 2.5rem;
+margin-bottom: 16px;
+}
+
+.section-subtitle {
+color: #aeb6d9;
+max-width: 700px;
+margin-bottom: 45px;
+}
+
+.cards {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 24px;
+}
+
+.card {
+padding: 32px;
+border-radius: 24px;
+background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
+border: 1px solid rgba(255,255,255,0.12);
+transition: 0.25s ease;
+}
+
+.card:hover {
+transform: translateY(-8px);
+border-color: rgba(122, 143, 255, 0.6);
+}
+
+.card h3 {
+font-size: 1.6rem;
+margin-bottom: 12px;
+}
+
+.card p {
+color: #bec5e4;
+}
+
+.tag {
+display: inline-block;
+margin-top: 22px;
+padding: 7px 12px;
+border-radius: 999px;
+background: rgba(120,140,255,0.16);
+color: #bcc7ff;
+font-size: 0.85rem;
+}
+
+.about {
+background: #0B1020;
+}
+
+.contact {
+text-align: center;
+background:
+radial-gradient(circle at center, rgba(117, 76, 255, 0.25), transparent 40%),
+#070A12;
+}
+
+.contact h2 {
+font-size: 2.7rem;
+margin-bottom: 18px;
+}
+
+.contact p {
+color: #bfc6e6;
+margin-bottom: 30px;
+}
+
+footer {
+padding: 30px 8%;
+color: #7e86aa;
+border-top: 1px solid rgba(255,255,255,0.08);
+text-align: center;
+}
+
+@media (max-width: 700px) {
+nav {
+align-items: flex-start;
+gap: 20px;
+flex-direction: column;
+margin-bottom: 80px;
+}
+
+.nav-links a {
+margin-left: 0;
+margin-right: 18px;
+}
+
+.buttons a {
+margin-bottom: 12px;
+}
+}
+</style>
+</head>
+<body>
+
+<header>
+<nav>
+<div class="logo">Klym Enterprises LLC</div>
+<div class="nav-links">
+<a href="#apps">Apps</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<div class="hero">
+<div class="badge">App development company</div>
+<h1>Building digital products for the next generation.</h1>
+<p>
+Klym Enterprises LLC creates modern mobile apps that combine self-improvement,
+education, and engaging user experiences.
+</p>
+<div class="buttons">
+<a href="#apps" class="primary">Explore Our Apps</a>
+<a href="#contact" class="secondary">Contact Us</a>
+</div>
+</div>
+</header>
+
+<section id="apps">
+<h2 class="section-title gradient-text">Our Apps</h2>
+<p class="section-subtitle">
+From health and beauty tools to gamified education, our apps are designed to be useful,
+sleek, and easy to use.
+</p>
+
+<div class="cards">
+<div class="card">
+<h3>Framemaxx</h3>
+<p>
+A health and beauty app that helps users analyze their face shape, discover hairstyle
+recommendations, track routines, explore fitness and nutrition tools, and improve their overall appearance.
+</p>
+<span class="tag">Health & Beauty</span>
+</div>
+
+<div class="card">
+<h3>Code Maze</h3>
+<p>
+A coding education game currently in development where users answer programming questions
+to move through a dungeon-style maze and level up their coding knowledge.
+</p>
+<span class="tag">In Development</span>
+</div>
+
+<div class="card">
+<h3>More Coming Soon</h3>
+<p>
+Klym Enterprises LLC is focused on creating practical, entertaining, and scalable apps across
+lifestyle, education, and productivity.
+</p>
+<span class="tag">Future Products</span>
+</div>
+</div>
+</section>
+
+<section id="about" class="about">
+<h2 class="section-title">About Klym Enterprises</h2>
+<p class="section-subtitle">
+Klym Enterprises LLC is an app development company focused on building clean, modern,
+user-friendly digital products. Our goal is to make apps that are not only functional,
+but also enjoyable to use.
+</p>
+
+<div class="cards">
+<div class="card">
+<h3>Modern Design</h3>
+<p>We focus on sleek interfaces, smooth user flows, and polished mobile experiences.</p>
+</div>
+
+<div class="card">
+<h3>Useful Tools</h3>
+<p>Our apps solve real problems, from personal improvement to learning new skills.</p>
+</div>
+
+<div class="card">
+<h3>Scalable Ideas</h3>
+<p>We build with long-term growth, app store readiness, and future expansion in mind.</p>
+</div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<h2>Let’s build what’s next.</h2>
+<p>For support, partnerships, or business inquiries, contact Klym Enterprises LLC.</p>
+<div class="buttons">
+<a href="mailto:framemaxx@aol.com" class="primary">Email Us</a>
+</div>
+</section>
+
+<footer>
+© 2026 Klym Enterprises LLC. All rights reserved.
+</footer>
+
+</body>
+</html>
